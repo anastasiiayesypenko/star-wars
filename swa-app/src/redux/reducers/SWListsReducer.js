@@ -25,6 +25,8 @@ const SWListsReducer = (state = initialState, { type, payload }) => {
           };
     case types.SET_SW_LIST_ERROR:
       return { ...state, error: payload.error, loading: false };
+    case types.RESET_SW_LIST:
+      return { ...state, planets: {}, starships: {} };
     default:
       return state;
   }

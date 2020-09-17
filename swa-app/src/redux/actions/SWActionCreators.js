@@ -16,6 +16,8 @@ export const setSWListActionCreator = ({ page, tab }) => (dispatch) => {
     });
 };
 
+export const resetSWListActionCreator = () => ({ type: types.RESET_SW_LIST });
+
 export const addSavedItemActionCreator = (item) => ({
   type: types.ADD_SAVED_ITEM,
   payload: { item },

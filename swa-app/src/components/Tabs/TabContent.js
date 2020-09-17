@@ -6,6 +6,7 @@ import { spin, tabTitle, hoverCover, nameFilter } from "./Tabs.module.scss";
 import {
   addSavedItemActionCreator,
   setSWListActionCreator,
+  resetSWListActionCreator,
 } from "../../redux/actions/SWActionCreators";
 import TabImage from "./TabImage";
 
@@ -21,6 +22,7 @@ const SavedItemsTabContent = ({
   SWLists,
   setSWList,
   addSavedItem,
+  resetLists,
 }) => {
   const [page, setPage] = useState(1);
   const [userInput, setUserInput] = useState("");
@@ -28,12 +30,13 @@ const SavedItemsTabContent = ({
   useEffect(() => {
     let isSubscribed = true;
     if (isSubscribed && activeTab !== "saved") {
+      resetLists();
       setSWList(page, activeTab);
     }
     return () => {
       isSubscribed = false;
     };
-  }, [page, activeTab, setSWList]);
+  }, [page, activeTab, setSWList, resetLists]);
 
   useEffect(() => {
     let isSubscribed = true;
@@ -125,6 +128,7 @@ const mapStateToProps = (state) => ({
 const mapDispatchToProps = (dispatch) => ({
   setSWList: (page, tab) => dispatch(setSWListActionCreator({ page, tab })),
   addSavedItem: (itemToSave) => dispatch(addSavedItemActionCreator(itemToSave)),
+  resetLists: () => dispatch(resetSWListActionCreator()),
 });
 
 export default connect(
