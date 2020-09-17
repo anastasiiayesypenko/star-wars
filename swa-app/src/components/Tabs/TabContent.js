@@ -12,7 +12,7 @@ import TabImage from "./TabImage";
 
 const getFilteredSavedItems = (savedItems, userInput) => {
   return savedItems.filter((savedItem) =>
-    savedItem.name.toLowerCase().includes(userInput)
+    savedItem.name.toLowerCase().includes(userInput.toLowerCase())
   );
 };
 
