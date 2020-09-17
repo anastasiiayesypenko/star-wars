@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "55db9e9c71309fa10c10a622a8be9aaf",
+    "revision": "a24975a83e6dd2267ddb37ff768574fc",
     "url": "/star-wars/index.html"
   },
   {
-    "revision": "008bc954bfd6d2163610",
+    "revision": "550217bd51ae37742cc1",
     "url": "/star-wars/static/css/2.99a5358a.chunk.css"
   },
   {
-    "revision": "58eb48e79d717f1c5430",
+    "revision": "4283630e9ac118913801",
     "url": "/star-wars/static/css/main.4743d36f.chunk.css"
   },
   {
-    "revision": "008bc954bfd6d2163610",
-    "url": "/star-wars/static/js/2.c81852b8.chunk.js"
+    "revision": "550217bd51ae37742cc1",
+    "url": "/star-wars/static/js/2.a837a28a.chunk.js"
   },
   {
     "revision": "3453b8997016469371284a28c0e873e2",
-    "url": "/star-wars/static/js/2.c81852b8.chunk.js.LICENSE.txt"
+    "url": "/star-wars/static/js/2.a837a28a.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "58eb48e79d717f1c5430",
-    "url": "/star-wars/static/js/main.d14c5a38.chunk.js"
+    "revision": "4283630e9ac118913801",
+    "url": "/star-wars/static/js/main.912a133b.chunk.js"
   },
   {
     "revision": "dbcfabd80b3cff4b6d3e",
