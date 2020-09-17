@@ -1,0 +1,53 @@
+@import "../../variables.scss";
+
+.tabPanel {
+  padding: 20px !important;
+  div {
+    text-transform: capitalize;
+  }
+}
+.spin {
+  position: absolute !important;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.imageWrapper {
+  width: 100%;
+  min-width: 100%;
+  height: 200px;
+  overflow: hidden;
+  display: flex;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border-radius: 25px;
+  &:hover .tabImage{
+    opacity: 0.9;
+    filter: blur(2px);
+  }
+  @media (min-width: 768px) {
+    height: 350px;
+  }
+  @media (min-width: 1280px) {
+    height: 450px;
+  }
+}
+.tabImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.tabTitle {
+  padding: 20px;
+  color: $primary-font-color;
+  font-size: 20px;
+  background-color: $primary-background-color;
+  position: absolute;
+  left: 50px;
+  bottom: 20px;
+}
+.nameFilter {
+  margin: 20px 0 !important;
+}

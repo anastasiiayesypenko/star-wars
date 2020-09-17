@@ -1,0 +1,15 @@
+@import "../../variables.scss";
+
+.appHeader {
+  color: $secondary-font-color;
+  height: 64px;
+  background-color: $secondary-background-color;
+  font-size: large;
+  display: flex;
+  align-items: center;
+  padding: 0 30px;
+}
+.layout {
+  min-height: 100vh !important;
+  background-color: $primary-background-color;
+}

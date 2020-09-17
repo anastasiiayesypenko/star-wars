@@ -1,0 +1,8 @@
+const types = {
+  ADD_SAVED_ITEM: "ADD_SAVED_ITEM",
+  SET_SW_LIST: "SET_SW_LIST",
+  SET_SW_LIST_ERROR: "SET_SW_LIST_ERROR",
+  START_SW_LIST_LOADING: "START_SW_LIST_LOADING"
+};
+
+export default types;
